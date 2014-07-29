@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ArcGIS Web Development</title>
+    <link rel="stylesheet"
+    href="http://js.arcgis.com/3.9/js/esri/css/esri.css">
+  </head>
+  <body>
+    <div id="map"></div>
+    <script type="text/javascript"
+      src="http://js.arcgis.com/3.9/"></script>
+    <script type="text/javascript">
+      require(['esri/map'], function(Map) {
+        var map = new Map('map', {
+          basemap: 'streets',
+          autoResize: true,
+          center: [-118.2095, 34.0866],
+          zoom: 10
+        });
+      });
+    </script>
+  </body>
+</html>
